@@ -1,17 +1,17 @@
 package com.fx.url;
 
 /**
- * ÏµÍ³url¹ÜÀíÃ¶¾Ù
+ * ç»Ÿä¸€è·¯ç”±æžšä¸¾
  *<p>Title: UrlManager.java</p>
  * <p>Description: </p>
  * <p>Copyright: Copyright (c) 2017</p>
  * <p>Company: </p>
  * @author sky
- * @date 2019Äê3ÔÂ26ÈÕ
+ * @date 2019å¹´3æœˆ28æ—¥
  */
 public enum UrlManager {
-	LOGIN("/face/login.fxml","µÇÂ¼"),
-	MAIN("/face/main.fxml","Ö÷Ò³"), 
+	LOGIN("/face/login.fxml","ï¿½ï¿½Â¼"),
+	MAIN("/face/main.fxml","ï¿½ï¿½Ò³"), 
 	Notify("/face/notify.fxml","notification");
 	private String url;
 	private String title;

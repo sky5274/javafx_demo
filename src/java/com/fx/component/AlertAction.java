@@ -3,16 +3,15 @@ package com.fx.component;
 import javafx.scene.control.ButtonType;
 
 /**
- * ³éÏóÌáÊ¾ĞÅÏ¢ĞĞÎª
+ * æç¤ºæ¡†è¡Œä¸º
  *<p>Title: AlertAction.java</p>
  * <p>Description: </p>
  * <p>Copyright: Copyright (c) 2017</p>
  * <p>Company: </p>
  * @author sky
- * @date 2019Äê3ÔÂ28ÈÕ
+ * @date 2019å¹´3æœˆ28æ—¥
  * @param <K>
  */
-@SuppressWarnings("restriction")
 public abstract class AlertAction <K>{
 	private String title;
 	private K content;

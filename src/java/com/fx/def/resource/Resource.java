@@ -3,13 +3,13 @@ package com.fx.def.resource;
 import java.net.URL;
 
 /**
- * ÏµÍ³Í¨ÓÃ×ÊÔ´¶¨Î»
+ * ç»Ÿä¸€èµ„æºå®šä½æ–¹æ³•
  *<p>Title: Resource.java</p>
  * <p>Description: </p>
  * <p>Copyright: Copyright (c) 2017</p>
  * <p>Company: </p>
  * @author sky
- * @date 2019Äê3ÔÂ26ÈÕ
+ * @date 2019å¹´3æœˆ28æ—¥
  */
 public class Resource {
 	

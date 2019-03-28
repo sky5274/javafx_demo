@@ -1,13 +1,13 @@
 package com.fx.component;
 
 /**
- * °´Å¥ÊÂ¼þÒ»°ã½Ó¿Ú
+ * äº‹ä»¶æ‰§è¡Œè¡Œä¸º
  *<p>Title: ActionFunctionn.java</p>
  * <p>Description: </p>
  * <p>Copyright: Copyright (c) 2017</p>
  * <p>Company: </p>
  * @author sky
- * @date 2019Äê3ÔÂ28ÈÕ
+ * @date 2019å¹´3æœˆ28æ—¥
  */
 public interface ActionFunctionn {
 	void action();

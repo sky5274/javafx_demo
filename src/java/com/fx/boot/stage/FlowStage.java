@@ -8,7 +8,6 @@ import com.fx.url.UrlManager;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-@SuppressWarnings("restriction")
 public class FlowStage extends Stage{
 	private double width=Toolkit.getDefaultToolkit().getScreenSize().getWidth()*0.8;
 	private double heigth=Toolkit.getDefaultToolkit().getScreenSize().getHeight()*0.8;
@@ -18,18 +17,18 @@ public class FlowStage extends Stage{
 		super(stage.getStyle());
 	}
 	/**
-	 * µ¼º½£¨²»ÊÇĞÂ¿ªÒ³Ãæ£©£¬ÎŞ²ÎÊı
-	 * <p>Title: navgicateTo</p>
-	 * <p>Description: </p>
-	 * @param urlcode
-	 * @author Íõ·«
+	 * é¡µé¢è·³è½¬
+	* <p>Title: navgicateTo</p>
+	* <p>Description: </p>
+	* @param urlcode
+	* @return
 	 */
 	public <T> T navgicateTo(UrlManager urlcode) {
 		return navgicateTo(urlcode,null);
 	}
 	
 	/**
-	 * Ğ¯´ø²ÎÊı µ¼º½Ò³Ãæ £¨²»ÊÇĞÂ¿ªÒ³Ãæ£©
+	 * æºå¸¦ä¿¡æ¯çš„é¡µé¢è·³è½¬
 	* <p>Title: navgicateTo</p>
 	* <p>Description: </p>
 	* @param urlcode
@@ -46,12 +45,12 @@ public class FlowStage extends Stage{
 	}
 
 	/**
-	 * ¸Ä±ä³¡¾°£¨µ¼º½2£©
+	 * åœºæ™¯è½¬æ¢
 	 * <p>Title: nagvicateTo</p>
 	 * <p>Description: </p>
 	 * @param sc
 	 * @param title
-	 * * @author Íõ·«
+	 * * @author ï¿½ï¿½ï¿½ï¿½
 	 */
 	public void nagvicateTo(Scene sc,String title) {
 		setTitle(title);

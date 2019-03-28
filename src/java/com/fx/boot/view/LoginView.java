@@ -12,7 +12,6 @@ import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 
-@SuppressWarnings("restriction")
 @Component
 public class LoginView extends BaseView{
 	@FXML
@@ -31,9 +30,9 @@ public class LoginView extends BaseView{
 		log.debug("user:"+userName.getText());
 		log.debug("passwd:"+passwd.getText());
 		if(userName.getText().equals("")) {
-			Dialog.alert("ÓÃ»§Ãû²»ÄÜÎª¿Õ");
+			Dialog.alert("ç”¨æˆ·åä¸ºç©º");
 		}else if(passwd.getText().equals("")) {
-			Dialog.alert("ÃÜÂë²»ÄÜÎª¿Õ");
+			Dialog.alert("ç”¨æˆ·å¯†ç ä¸ºç©º");
 		}else {
 			DataResourceBundle<String> data=new DataResourceBundle<String>(stage);
 			data.put("user", userName.getText());

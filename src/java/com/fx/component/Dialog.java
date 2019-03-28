@@ -13,25 +13,24 @@ import javafx.scene.control.ButtonType;
 import javafx.scene.control.DialogPane;
 
 /**
- * ÌáÊ¾\¾¯¸æ¿ò·½·¨
+ * æç¤º\æ“ä½œæ¡†è°ƒç”¨æ–¹æ³•
  *<p>Title: Dialog.java</p>
  * <p>Description: </p>
  * <p>Copyright: Copyright (c) 2017</p>
  * <p>Company: </p>
  * @author sky
- * @date 2019Äê3ÔÂ28ÈÕ
+ * @date 2019å¹´3æœˆ28æ—¥
  */
-@SuppressWarnings("restriction")
 public class Dialog {
 	public static void alert(String cont) {
-		Alert alert = new Alert(AlertType.NONE,cont,new ButtonType("È·ÈÏ",ButtonData.YES));
-		alert.setTitle("ÌáÊ¾");
+		Alert alert = new Alert(AlertType.NONE,cont,new ButtonType("ç¡®å®š",ButtonData.YES));
+		alert.setTitle("æç¤ºÊ¾");
 		alert.show();
 	}
 	
 	public static <T> void comfrim(AlertAction<T> con) {
-		Alert alert = new Alert(AlertType.CONFIRMATION,null,new ButtonType("È·ÈÏ",ButtonData.YES),new ButtonType("È¡Ïû",ButtonData.CANCEL_CLOSE));
-		alert.setTitle(StringUtils.isEmpty(con.getTitle())?"È·ÈÏ":con.getTitle());
+		Alert alert = new Alert(AlertType.CONFIRMATION,null,new ButtonType("ç¡®è®¤",ButtonData.YES),new ButtonType("å…³é—­",ButtonData.CANCEL_CLOSE));
+		alert.setTitle(StringUtils.isEmpty(con.getTitle())?"æç¤º":con.getTitle());
 		if (con.getContent() instanceof String) {
 			alert.setContentText(con.getContent().toString());
 		}else if(con.getContent() instanceof DialogPane) {

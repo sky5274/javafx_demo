@@ -10,7 +10,6 @@ import com.fx.def.resource.Resource;
 import javafx.fxml.FXMLLoader;
 import javafx.util.Callback;
 
-@SuppressWarnings("restriction")
 public class SpringFxmlLoader {
 	private static final ApplicationContext applicationContext = new ClassPathXmlApplicationContext("classpath:application.xml");
 	private static  FXMLLoader loader;
@@ -57,7 +56,7 @@ public class SpringFxmlLoader {
 	}
 	
 	/**
-	 * ªÒ»°“≥√Êview
+	 * Âä†ËΩΩfmlload
 	* <p>Title: getBean</p>
 	* <p>Description: </p>
 	* @param clazz

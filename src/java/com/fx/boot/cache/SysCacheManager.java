@@ -5,13 +5,13 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 
 /**
- * 	ÏµÍ³È«¾Ö»º´æ
+ * å…¨å±€ç¼“å­˜
  *<p>Title: SysCacheManager.java</p>
  * <p>Description: </p>
  * <p>Copyright: Copyright (c) 2017</p>
  * <p>Company: </p>
  * @author sky
- * @date 2019Äê3ÔÂ28ÈÕ
+ * @date 2019å¹´3æœˆ28æ—¥
  */
 public class SysCacheManager {
 	private static ConcurrentMap<String, CacheValue<?>> cacheMap=new ConcurrentHashMap<>();

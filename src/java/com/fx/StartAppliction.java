@@ -15,15 +15,14 @@ import javafx.scene.control.ButtonType;
 import javafx.scene.image.Image;
 
 /**
- * Ö÷Ò³ÃæÄÚÈİ
- *<p>Title: IndexMainAppliction.java</p>
+ * é¡¹ç›®å¯åŠ¨
+ *<p>Title: StartAppliction.java</p>
  * <p>Description: </p>
  * <p>Copyright: Copyright (c) 2017</p>
  * <p>Company: </p>
  * @author sky
- * @date 2019Äê3ÔÂ26ÈÕ
+ * @date 2019å¹´3æœˆ28æ—¥
  */
-@SuppressWarnings("restriction")
 public class StartAppliction extends Application {
 	public static FlowStage stage;
 	private Log log=LogFactory.getLog(getClass());
@@ -37,7 +36,7 @@ public class StartAppliction extends Application {
 		} catch (Exception e) {
 			log.warn(e.getMessage(), e);
 		}
-		//Ìí¼ÓÒ³ÃæÍ¼±ê
+		//è®¾ç½®æ ‡é¢˜æ å›¾æ ‡
 		stage.getIcons().add(new Image("resources/img/bg_1.png"));
 		stage.show();
 //		try {
@@ -46,7 +45,7 @@ public class StartAppliction extends Application {
 //			// TODO Auto-generated catch block
 //			e.printStackTrace();
 //		}
-		Dialog.comfrim(new AlertStringAction("ÊÇ·ñÉ¾³ı£¿") {
+		Dialog.comfrim(new AlertStringAction("æç¤º") {
 
 			@Override
 			public void success(ButtonType btnType) {

@@ -12,13 +12,13 @@ import com.fx.boot.stage.FlowStage;
 import javafx.stage.Stage;
 
 /**
- * Ò³Ãæ×ÊÔ´
+ * è‡ªå®šä¹‰é¡µé¢æ•°æ®è¯·æ±‚æ•°æ®æºå¸¦
  *<p>Title: DataResourceBundle.java</p>
  * <p>Description: </p>
  * <p>Copyright: Copyright (c) 2017</p>
  * <p>Company: </p>
  * @author sky
- * @date 2019Äê3ÔÂ26ÈÕ
+ * @date 2019å¹´3æœˆ28æ—¥
  * @param <T>
  */
 public class DataResourceBundle<T> extends ResourceBundle{

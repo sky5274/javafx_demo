@@ -4,15 +4,14 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Tooltip;
 
 /**
- * ×Ô¶¨ÒåµÄ´ıÌáÊ¾ĞÅÏ¢µÄ°´Å¥
+ * è‡ªå®šä¹‰çš„æºå¸¦æç¤ºçš„æŒ‰é’®
  *<p>Title: TButton.java</p>
  * <p>Description: </p>
  * <p>Copyright: Copyright (c) 2017</p>
  * <p>Company: </p>
  * @author sky
- * @date 2019Äê3ÔÂ28ÈÕ
+ * @date 2019å¹´3æœˆ28æ—¥
  */
-@SuppressWarnings("restriction")
 public class TButton extends Button{
 	private String tips;
 	

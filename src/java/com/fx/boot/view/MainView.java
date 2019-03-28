@@ -18,7 +18,6 @@ import javafx.scene.control.ScrollPane;
 import javafx.scene.control.Tooltip;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.HBox;
-@SuppressWarnings("restriction")
 @Component
 public class MainView extends BaseView {
 	@FXML
@@ -39,12 +38,12 @@ public class MainView extends BaseView {
 	public void initialize(URL location, ResourceBundle resources) {
 		super.initialize(location, resources);
 		userName.setText(((DataResourceBundle<String>)resources).get("user").toString());
-		//³õÊ¼»¯ÔªËØ
+		//åˆå§‹åŒ–é¡µé¢çŽ¯å¢ƒ
 		initEvn();
 		loginOut.setOnMouseClicked((e)->{
 			log.debug(e.toString());
 			System.err.println((String)SysCacheManager.get("userpwd"));
-			Dialog.alert("ÊÇ·ñÍË³ö");
+			Dialog.alert("ï¿½Ç·ï¿½ï¿½Ë³ï¿½");
 		});
 	}
 	private void initEvn() {

@@ -12,12 +12,11 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javafx.scene.Parent;
 
-@SuppressWarnings("restriction")
 public class BootView{
 	private static double def_width=Toolkit.getDefaultToolkit().getScreenSize().getWidth()*0.8;
 	private static double def_heigth=Toolkit.getDefaultToolkit().getScreenSize().getHeight()*0.8;
 	/**
-	 * ¿ªÆôĞÂÒ³Ãæ
+	 * åœ¨æ–°åœºæ™¯ä¸­æ‰“å¼€é¡µé¢
 	* <p>Title: open</p>
 	* <p>Description: </p>
 	* @param urlcode
@@ -28,11 +27,11 @@ public class BootView{
 	}
 	
 	/**
-	 * ¸ù¾İ×´Ì¬´ò¿ªÒ³ÃæµÄ¿ØÖÆÆ÷
+	 * è·å–é¡µé¢ï¼Œ
 	* <p>Title: get</p>
 	* <p>Description: </p>
 	* @param urlcode
-	* @param flag
+	* @param flag  æ˜¯å¦æ˜¾ç¤ºæ ‡å¿—
 	* @return
 	 */
 	public static <T,K extends Stage> T get(K stage,UrlManager urlcode,boolean flag) {

@@ -1,13 +1,13 @@
 package com.fx.component;
 
 /**
- * ÌáÊ¾ÎÄ×ÖµÄÖ´ĞĞĞĞÎª
+ * æç¤ºå­—ç¬¦ä¸²çš„æ‰§è¡Œè¡Œä¸º
  *<p>Title: AlertStringAction.java</p>
  * <p>Description: </p>
  * <p>Copyright: Copyright (c) 2017</p>
  * <p>Company: </p>
  * @author sky
- * @date 2019Äê3ÔÂ28ÈÕ
+ * @date 2019å¹´3æœˆ28æ—¥
  */
 public abstract class AlertStringAction extends AlertAction <String>{
 	private String content;

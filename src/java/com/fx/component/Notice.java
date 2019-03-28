@@ -12,7 +12,6 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
-@SuppressWarnings("restriction")
 public class Notice {
 	
 	public void show(String content) throws IOException {

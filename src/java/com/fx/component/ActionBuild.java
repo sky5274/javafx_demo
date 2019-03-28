@@ -5,16 +5,15 @@ import java.util.function.Consumer;
 import javafx.scene.control.ButtonType;
 
 /**
- * ÌáÊ¾\¾¯¸æĞÅÏ¢½¨ÖşÆ÷
+ * æç¤º\æ“ä½œæ¡†è¡Œä¸ºå»ºé€ å™¨
  *<p>Title: ActionBuild.java</p>
  * <p>Description: </p>
  * <p>Copyright: Copyright (c) 2017</p>
  * <p>Company: </p>
  * @author sky
- * @date 2019Äê3ÔÂ28ÈÕ
+ * @date 2019å¹´3æœˆ28æ—¥
  * @param <T>
  */
-@SuppressWarnings("restriction")
 public class ActionBuild <T>{
 	private String title;
 	private T content;

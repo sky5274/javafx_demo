@@ -4,7 +4,6 @@ import java.util.function.Consumer;
 
 import javafx.scene.control.ButtonType;
 
-@SuppressWarnings("restriction")
 public class AlertObjecAction<T> extends AlertAction<T>{
 	private ActionFunctionn fail;
 	private ActionFunctionn before;
