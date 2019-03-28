@@ -10,8 +10,8 @@ package com.fx.url;
  * @date 2019年3月28日
  */
 public enum UrlManager {
-	LOGIN("/face/login.fxml","��¼"),
-	MAIN("/face/main.fxml","��ҳ"), 
+	LOGIN("/face/login.fxml","登录"),
+	MAIN("/face/main.fxml","主页"), 
 	Notify("/face/notify.fxml","notification");
 	private String url;
 	private String title;

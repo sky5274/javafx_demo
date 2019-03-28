@@ -43,7 +43,7 @@ public class MainView extends BaseView {
 		loginOut.setOnMouseClicked((e)->{
 			log.debug(e.toString());
 			System.err.println((String)SysCacheManager.get("userpwd"));
-			Dialog.alert("�Ƿ��˳�");
+			Dialog.alert("是否退出");
 		});
 	}
 	private void initEvn() {

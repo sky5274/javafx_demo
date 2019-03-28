@@ -24,7 +24,7 @@ import javafx.scene.control.DialogPane;
 public class Dialog {
 	public static void alert(String cont) {
 		Alert alert = new Alert(AlertType.NONE,cont,new ButtonType("确定",ButtonData.YES));
-		alert.setTitle("提示ʾ");
+		alert.setTitle("提示");
 		alert.show();
 	}
 	
