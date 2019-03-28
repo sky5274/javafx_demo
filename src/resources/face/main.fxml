@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import com.fx.component.TButton?>
+
+<AnchorPane prefHeight="293.0" prefWidth="283.0" style="-fx-padding: 0;" stylesheets="@../resources/img/css/mian.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fx.boot.view.MainView">
+   <children>
+      <Pane layoutX="99.0" prefHeight="38.0" prefWidth="200.0" styleClass="noborder">
+         <children>
+            <Button fx:id="loginOut" layoutX="124.0" layoutY="13.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="62.0" text="quit" />
+            <Label fx:id="userName" layoutX="85.0" minWidth="30" prefHeight="38.0" />
+         </children>
+      </Pane>
+      <ScrollPane layoutX="20.0" layoutY="108.0" prefHeight="235.0" prefWidth="274.0">
+        <content>
+          <AnchorPane fx:id="content" minHeight="0.0" minWidth="0.0" prefHeight="284.0" prefWidth="288.0" style="-fx-border-style: none;" />
+        </content>
+      </ScrollPane>
+      <ScrollPane fx:id="btnTab" hbarPolicy="ALWAYS" layoutY="48.0" prefHeight="60.0" prefWidth="305.0" style="-fx-padding: 0;" vbarPolicy="NEVER" >
+         <content>
+            <HBox fx:id="tabBox"  alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="295.0" >
+            	<TButton text="cess" tips="test tips"></TButton>
+      		</HBox>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
