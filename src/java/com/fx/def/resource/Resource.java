@@ -1,5 +1,6 @@
 package com.fx.def.resource;
 
+import java.io.InputStream;
 import java.net.URL;
 
 /**
@@ -18,6 +19,9 @@ public class Resource {
 			url=url.substring(1);
 		}
 		return Resource.class.getClassLoader().getResource(url);
+	}
+	public static InputStream getInputStream(String url) {
+		return Resource.class.getResourceAsStream(url);
 	}
 	
 }
