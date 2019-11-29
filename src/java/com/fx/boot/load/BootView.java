@@ -3,12 +3,14 @@ package com.fx.boot.load;
 import java.awt.Toolkit;
 import java.io.IOException;
 import org.springframework.util.StringUtils;
-import com.fx.boot.stage.FlowStage;
+
+import com.fx.boot.view.LoadingProgessView;
 import com.fx.data.bundle.DataResourceBundle;
 import com.fx.def.resource.Resource;
 import com.fx.url.UrlManager;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import javafx.scene.Parent;
 
@@ -38,6 +40,7 @@ public class BootView{
 		return get(stage,urlcode,null,def_width,def_heigth,flag);
 	}
 	public static <T,K extends Stage> T get(K stage,UrlManager urlcode,DataResourceBundle<?> resource,String cssUrl,Double width,Double heigth,boolean flag) {
+		LoadingProgessView.load(stage);
 		FXMLLoader view = getViewLoad(urlcode);
 		try {
 			if(resource==null) {
@@ -64,6 +67,7 @@ public class BootView{
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		LoadingProgessView.close(stage);
 		return view.getController();
 	}
 	public static <T,K extends Stage> T get(K stage,UrlManager urlcode,String cssUrl,Double width,Double heigth,boolean flag) {

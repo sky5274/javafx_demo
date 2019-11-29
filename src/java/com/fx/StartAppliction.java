@@ -4,6 +4,7 @@ package com.fx;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import com.fx.boot.stage.FlowStage;
+import com.fx.boot.view.LoadingProgessView;
 import com.fx.component.ActionBuild;
 import com.fx.component.AlertObjecAction;
 import com.fx.component.AlertStringAction;
@@ -37,7 +38,7 @@ public class StartAppliction extends Application {
 			log.warn(e.getMessage(), e);
 		}
 		//设置标题栏图标
-		stage.getIcons().add(new Image("resources/img/bg_1.png"));
+		stage.getIcons().add(new Image("/img/bg_1.png"));
 		stage.show();
 //		try {
 //			new Notice().show("exte");
@@ -53,17 +54,21 @@ public class StartAppliction extends Application {
 
 			}
 		});
-		
+		log.debug("load the progress");
+		LoadingProgessView.load(stage);
 		AlertObjecAction<String> alert = new ActionBuild<String>()
-		.title("ceshi").content("lai ba ceshi yixia")
+		.title("控制").content("是否关闭loadding")
 		.before(()->{
 			stage.getHeight();
 		})
 		.success((btn)->{
+			log.debug("load progress closed");
 			log.debug(btn.getText());
+			LoadingProgessView.close(stage);
 		})
 		.build();
 		Dialog.comfrim(alert);
+		
 	}
 	
 	public static void main(String[] args) {
